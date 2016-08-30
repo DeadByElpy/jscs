@@ -8,6 +8,7 @@ It is inspired by what is popular within the community, and flavored with some p
 
 ## Table of Contents
 
+1. [Basic principles](#basic-principles)
 1. [Objects](#objects)
 1. [Arrays](#arrays)
 1. [Strings](#strings)
@@ -30,6 +31,41 @@ It is inspired by what is popular within the community, and flavored with some p
 1. [Linting](#linting)
 1. [Commits](#commits)
 1. [Resources](#resources)
+
+
+## Basic principles ##
+
+Always do for each module:
+- add comment block with module description, author name and license
+- enable strict mode
+
+```js
+// bad
+var result = getResult();
+```
+
+```js
+// also bad
+'use strict';
+
+
+var result = getResult();
+```
+
+```js
+// good
+/**
+ * Main application entry point.
+ *
+ * @author %author-name% %author-surname% <author@email.com>
+ * @license GNU GENERAL PUBLIC LICENSE Version 3
+ */
+
+'use strict';
+
+
+var result = getResult();
+```
 
 
 ## Objects ##
